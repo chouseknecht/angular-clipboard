@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" ng-app="sampleApp">
+<head>
+    <meta charset="utf-8">
+    <title>Angular Clipboard | copy to clipboard demo</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="app/css/sampleApp.css" >
+</head>
+<body>
+    
+    <nav id="top-nav" class="navbar navbar-default navbar-fixed-top fade-in" role="navigation">
+        <div class="container">
+            <div class="nav navbar-left">
+                Copy to Clipboard Demo</a>
+            </div>
+            <div class="nav navbar-right">
+                <img src="app/img/redcow.png" >
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" ng-controller="sampleController">
+        <div class="row">
+            <div class="col-lg-6" ng-show="!flashAvailable">
+                <div class="alert alert-info">
+                    <p><strong>Flash pluggin was not found or could not be properly configured for this browser.</strong></p>
+                </div>
+            </div>
+            <div class="col-lg-6" ng-show="flashAvailable">
+                <div class="alert alert-info instructions">Click the Copy button to copy the sample text to the clipboard. The text can then be pasted into the blank field below. Paste the text by using a keyboard shortcut or right-click on the field and choose paste from the menu.
+                </div>
+                <form name="zero_form">
+                    <div class="form-group">
+                        <label>Sample text to copy</label>
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control" id="text-to-copy" ng-model="copyText" readonly>
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button" data-model="copyText" zero-clipboard data-clipboard-target="text-to-copy"><i class="fa fa-clipboard"></i> Copy</button>
+                            </span>
+                        </div>
+                    </div><!-- form group -->
+                    <div class="form-group">
+                        <label>Paste text here using ctrl-v or &#8984;-v</label>
+                        <input type="text" class="form-control" id="paste-target" >
+                    </div>
+                </form>
+            </div> <!-- col-lg-6 -->
+        </div> <!-- row -->
+    </div><!-- container -->
+
+    <div class="footer navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 copyright">
+                    Designed and built by <a href="http://twitter.com/chouseknecht">@chouseknecht</a><br \>
+                    Code and documentation licensed under <a href="http://opensource.org/licenses/MIT">The MIT License</a><br />
+                    Zany cow logo crafted by <a href="http://www.designatorium.com">Designatorium</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <button id="test-flash" style="dislplay: none;"></button>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/zeroclipboard/ZeroClipboard.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/zeroclipboard/ZeroClipboard.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="app/js/sampleApp.js"></script>
+
+</body>
+</html>
