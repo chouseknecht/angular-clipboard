@@ -9,7 +9,7 @@
 
 var sampleApp = angular.module('sampleApp', []);
 
-sampleApp.value('zerocopy_movie', '/bower_components/zeroclipboard/ZeroClipboard.swf');
+sampleApp.value('zerocopy_movie', 'bower_components/zeroclipboard/ZeroClipboard.swf');
 
 sampleApp.run(['$rootScope', 'zerocopy_movie', function($rootScope, zerocopy_movie) {
     // Determine if flash is available and configure ZeroClipboard
