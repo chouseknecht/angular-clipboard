@@ -1,0 +1,35 @@
+{
+  "name": "fontawesome-clean",
+  "homepage": "https://github.com/nbsp/bower-fontawesome-clean",
+  "authors": [
+    "kyr <kyrwastaken@gmail.com>"
+  ],
+  "description": "minimal port of fontawesome",
+  "main": "font-awesome.min.css",
+  "keywords": [
+    "font",
+    "awesome",
+    "css",
+    "fontawesome",
+    "font-awesome"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "pre",
+    "test",
+    "tests"
+  ],
+  "_release": "7b454a6206",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "7b454a6206e3321cea2d196cf727bbbe1390ae85"
+  },
+  "_source": "git://github.com/nbsp/bower-fontawesome-clean.git",
+  "_target": "*",
+  "_originalSource": "fontawesome-clean",
+  "_direct": true
+}

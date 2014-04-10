@@ -1,0 +1,54 @@
+/*********************************************
+ *  Copyright (c) 2013-2014 Chris Houseknecht
+ *
+ *  SampleForm.js
+ *
+ *  Demonstrate some of the things you can do with angular-forms.js to 
+ *  generate clean, consistent forms in your app.
+ *  
+ */
+
+body {
+    padding-top: 130px;
+}
+
+.red-txt {
+    color: #dd1b16;
+}
+
+.navbar-left {
+    font-size: 20px;
+    color: #000;
+    margin-top: 25px;
+}
+
+#top-nav {
+    height: 80px;
+}
+
+.navbar-right img {
+    max-width: 60px;
+    padding-top: 10px;
+}
+
+.navigation {
+    margin-top: 20px;
+    padding-right: 15px;
+}
+
+.footer {
+    margin-top: 30px;
+}
+
+.footer .navbar-brand { 
+    margin-bottom: 20px;
+    padding-right: 0;
+}
+
+.copyright {
+    padding: 15px 0;
+}
+
+.instructions {
+    margin-bottom: 25px;
+}
